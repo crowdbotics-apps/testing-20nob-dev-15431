@@ -39,6 +39,12 @@ export default class Blank extends React.Component {
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/eae4a5191fafae3979ea975d206fcd0b_0bdGYtC.jpg"
         }}
       />
+      <Image
+        source={{
+          uri:
+            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/eae4a5191fafae3979ea975d206fcd0b_0bdGYtC.jpg"
+        }}
+      />
       <TextInput
         placeholder="Sample text input placeholder"
         value={this.state.TextInput_12}
@@ -52,6 +58,7 @@ export default class Blank extends React.Component {
         onChangeText={nextValue => this.setState({ TextInput_15: nextValue })}
       />
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Image source={{ uri: "https://via.placeholder.com/150" }} />
     </View>
   )
 }
@@ -84,5 +91,13 @@ const styles = StyleSheet.create({
   Image_5: {},
   TextInput_12: {},
   TextInput_15: { height: 100 },
-  Button_31: {}
+  Button_31: {},
+  View_1: {},
+  Switch_3: { alignSelf: "flex-start" },
+  Image_5: {},
+  Image_33: {},
+  TextInput_12: {},
+  TextInput_15: { height: 100 },
+  Button_31: {},
+  Image_34: {}
 })
