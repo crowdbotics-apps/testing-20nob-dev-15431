@@ -78,5 +78,11 @@ const styles = StyleSheet.create({
   Image_5: {},
   TextInput_12: {},
   TextInput_15: { height: 100 },
-  Button_29: {}
+  Button_29: {},
+  View_1: {},
+  Switch_3: { alignSelf: "flex-start" },
+  Image_5: {},
+  TextInput_12: {},
+  TextInput_15: { height: 100 },
+  Button_31: {}
 })
