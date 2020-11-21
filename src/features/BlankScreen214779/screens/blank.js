@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   View,
   Image,
@@ -8,33 +8,42 @@ import {
   Button,
   Switch,
   TextInput,
-  StyleSheet,
-} from "react-native";
-import DateTimePicker from 'react-native-datepicker';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Slider from '@react-native-community/slider';
-import { CheckBox } from 'react-native-elements';
-import {SlideMenuIcon} from '../../../navigator/slideMenuIcon';
+  StyleSheet
+} from "react-native"
+import DateTimePicker from "react-native-datepicker"
+import Icon from "react-native-vector-icons/FontAwesome"
+import Slider from "@react-native-community/slider"
+import { CheckBox } from "react-native-elements"
+import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 
 export default class Blank extends React.Component {
-  static navigationOptions = ({navigation}) => {
+  static navigationOptions = ({ navigation }) => {
     return {
-      headerLeft: <SlideMenuIcon navigationProps={navigation} />,
-    };
-  };
-  
-  state = {};
+      headerLeft: <SlideMenuIcon navigationProps={navigation} />
+    }
+  }
+
+  state = { Switch_3: true }
 
   render = () => (
-    <View style={styles.container}>
-      <Text>This is your new component</Text>
+    <View>
+      <Switch
+        trackColor={{ true: "#409EFF", false: "#C0CCDA" }}
+        style={styles.Switch_3}
+        value={this.state.Switch_3}
+        onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
+      />
+      <Image source={{ uri: "https://via.placeholder.com/150" }} />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginHorizontal: 16,
+    marginHorizontal: 16
   },
-});
+  View_1: {},
+  Switch_3: { alignSelf: "flex-start" },
+  Image_5: {}
+})
