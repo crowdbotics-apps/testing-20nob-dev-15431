@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { Switch_3: true }
+  state = { Switch_3: true, TextInput_12: "", TextInput_15: "" }
 
   render = () => (
     <View>
@@ -38,6 +38,17 @@ export default class Blank extends React.Component {
           uri:
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/eae4a5191fafae3979ea975d206fcd0b_0bdGYtC.jpg"
         }}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_12}
+        onChangeText={nextValue => this.setState({ TextInput_12: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        multiline={true}
+        value={this.state.TextInput_15}
+        onChangeText={nextValue => this.setState({ TextInput_15: nextValue })}
       />
     </View>
   )
@@ -54,5 +65,10 @@ const styles = StyleSheet.create({
   Image_5: {},
   View_1: {},
   Switch_3: { alignSelf: "flex-start" },
-  Image_5: {}
+  Image_5: {},
+  View_1: {},
+  Switch_3: { alignSelf: "flex-start" },
+  Image_5: {},
+  TextInput_12: {},
+  TextInput_15: {}
 })
